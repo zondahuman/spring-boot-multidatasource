@@ -1,0 +1,43 @@
+DROP DATABASE IF EXISTS leepon_db;
+CREATE DATABASE IF NOT EXISTS leepon_db;
+use leepon_db;
+create table user_info (
+  id bigint(20) PRIMARY KEY AUTO_INCREMENT NOT NULL COMMENT '主键id',
+  username varchar(64)  COMMENT 'username',
+  password varchar(64)  COMMENT 'password'
+);
+
+DROP DATABASE IF EXISTS custom_db;
+CREATE DATABASE IF NOT EXISTS custom_db;
+use custom_db;
+create table t_china_city (
+  id bigint(20) PRIMARY KEY AUTO_INCREMENT NOT NULL COMMENT '主键id',
+  sname varchar(64)  COMMENT '订单名'
+);
+
+
+
+INSERT INTO `leepon_db`.`user_info`(`username`, `password`) VALUES ( 'abin2', 'lee2');
+
+INSERT INTO `custom_db`.`t_china_city`(`sname`) VALUES ('shanghai');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
